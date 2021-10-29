@@ -53,7 +53,7 @@ function reducer(state, action) {
     }
 }
 
-function AdminDashboard() {
+function AdminProdcuts() {
     const { state } = useContext(Store);
     const router = useRouter();
     const classes = useStyles();
@@ -237,4 +237,4 @@ function AdminDashboard() {
     );
 }
 
-export default dynamic(() => Promise.resolve(AdminDashboard), { ssr: false });
+export default dynamic(() => Promise.resolve(AdminProdcuts), { ssr: false });
